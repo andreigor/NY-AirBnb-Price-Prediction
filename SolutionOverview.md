@@ -134,6 +134,25 @@ a cross validation with 5 folds. The best results of the models can be seen on t
 As we can see, the model that performed the best was the linear regression, with the following hyperparameters: 10 iterations of training and an regularization parameter
 of 0.01.
 
+## Conclusions
+
+- In this work, we've explored the relationships between the variables and their effects on the price of listings of AirBnB in the NY City
+
+- Even though we could perform predictions of price using ML models, we can see that there is room to improvement, since the r² score of the predictions
+was not very high
+
+- We can see that the Ensemble tree models performed slightly worse than the linear regression. These types of models struggle more with a high dimensional problem, which was the case of when we used the text features.
+
+- The maximum depth used to train the tree models was 8. This is a low depth to such a high dimensional problem. Training with a higher depth would require a larger computational power, but would surely improve the model.
+
+#### Next Steps:
+
+- Use a Multi Layer Perceptron Neural Netwoork to apply deep learning to this model
+
+- Improve the Feature Generation process, training a word vector on the text features, which is an improvement in comparison to the bag of words.
+
+- Find new features to use, such as distance from the listing to landmarks on the NY City
+
 
 
 
